@@ -1,0 +1,89 @@
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Indian Premier League</title>
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style media="screen">
+.modal-title {
+	color: blue;
+}
+p {
+    margin: 0 0 10px;
+    color: red;
+}
+</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container clearfix">
+			<h1><i class="cl"><strong>Indian Premier League</strong></i> </h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-11 col-xs-11">
+				<div class="main-content">
+					<div class="all-products ">
+						<ul class="products-list">
+							<script id="products-template" type="x-handlebars-template">​ {{#each this}}
+								<li data-index="{{id}}">
+									<a id="{{id}}" href="#" class="product-photo"><img src="{{team_img_url}}" height="130" alt="{{team_name}}" /></a>
+									<h2><a href="#"> <b>{{team_name}}</b> </a></h2><br>
+									<button style="text-align:center; color:purple;"> Click On Image </button>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+					</div>
+					<div class="error page">
+						<h3>Sorry, something went wrong :(</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- model -->
+
+	<div class="container">
+		<!-- <h2>Modal Example</h2> -->
+		<!-- Trigger the modal with a button -->
+		<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+		<!-- Modal -->
+		<div class="playerModal">
+
+
+		</div>
+
+
+		<script src="js files/config.js"></script>
+		<script src="js files/iplApp.js"></script>
+		<link href="css/header.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script src="js files/jqevent.js"></script>
+		<!-- <script src="js files/jqevent1.js"></script> -->
+
+
+
+</body>
+
+</html>
